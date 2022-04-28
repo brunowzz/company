@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+nav {
+    margin-top: 2vw;
+    margin-left: 5vw;
+
+}
+
+li {
+    display: inline;
+}
+
+.listNavBar {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.875px;
+    color: #17233D;
+    margin-right: 2vw;
+}
+
+.listNavBar:hover {
+    color: #00DB70;
+}
+
+.listNavBar:active {
+    text-decoration: underline;
+}
+
+.buttonSign {
+    width: 6vw;
+    height: 5vh;
+    background: #6FBF44;
+    border: 1px solid #4CB538;
+    border-radius: 10px;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.buttonSign:hover {
+    font-size: 16px;
+    background: #E8B80C;
+    border: none;
+    animation-duration: 2s;
+}
+
+article {
+    display: flex;
+    margin: 6vw 8vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxImage {
+    width: 50%;
+}
+
+.image {
+    width: 35vw;
+    animation-name: logoImage;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.boxText {
+    width: 50%;
+    flex-direction: column;
+    padding-top: 3vw;
+}
+
+.boxTitle {
+    width: 60%;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3vw;
+    color: #161A49;
+}
+
+.boxParagraph {
+    margin-top: 1.6vw;
+    margin-bottom: 2vw;
+    width: 28vw;
+}
+
+p {
+    font-weight: 400;
+    font-size: 0.8vw;
+    line-height: 33px;
+    letter-spacing: 0.5px;
+    color: #4B505A;
+}
+
+.linkLearn {
+    font-weight: 500;
+    font-size: 0.6;
+    line-height: 27px;
+    letter-spacing: 1px;
+    color: #6FBF44;
+}
+
+.linkLearn:hover {
+    color: #161A49;
+}
+
+.linkLearn:active {
+    text-decoration: underline;
+}
+
+@keyframes logoImage {
+    from {
+        transform: translate(29px, 15px);
+    }
+}
