@@ -7,13 +7,11 @@
 }
 
 nav {
-    margin-top: 2vw;
-    margin-left: 5vw;
-
-}
-
-li {
-    display: inline;
+    margin: 47px 0 0 42px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 90px;
 }
 
 .listNavBar {
@@ -22,7 +20,7 @@ li {
     line-height: 21px;
     letter-spacing: 0.875px;
     color: #17233D;
-    margin-right: 2vw;
+    margin-right: 36px;
 }
 
 .listNavBar:hover {
@@ -34,8 +32,8 @@ li {
 }
 
 .buttonSign {
-    width: 6vw;
-    height: 5vh;
+    width: 124px;
+    height: 51px;
     background: #6FBF44;
     border: 1px solid #4CB538;
     border-radius: 10px;
@@ -55,17 +53,16 @@ li {
 
 article {
     display: flex;
-    margin: 6vw 8vw;
-    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
 }
 
-.boxImage {
-    width: 50%;
-}
 
 .image {
-    width: 35vw;
+    width: 534px;
+    height: 467px;
     animation-name: logoImage;
     animation-duration: 3s;
     animation-timing-function: linear;
@@ -73,39 +70,28 @@ article {
     animation-direction: alternate;
 }
 
-.boxText {
-    width: 50%;
-    flex-direction: column;
-    padding-top: 3vw;
-}
-
-.boxTitle {
-    width: 60%;
-}
-
 h1 {
+    width: 582px;
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 62px;
     color: #161A49;
-}
-
-.boxParagraph {
-    margin-top: 1.6vw;
-    margin-bottom: 2vw;
-    width: 28vw;
+    margin: 120px 0 47px 0;
 }
 
 p {
+    width: 493px;
+    height: 99px;
     font-weight: 400;
-    font-size: 0.8vw;
+    font-size: 18px;
     line-height: 33px;
     letter-spacing: 0.5px;
     color: #4B505A;
+    margin-bottom: 55px;
 }
 
 .linkLearn {
     font-weight: 500;
-    font-size: 0.6;
+    font-size: 18px;
     line-height: 27px;
     letter-spacing: 1px;
     color: #6FBF44;
@@ -117,6 +103,60 @@ p {
 
 .linkLearn:active {
     text-decoration: underline;
+}
+
+@media (max-width: 1163px) {
+    .buttonSign {
+        margin-bottom: 40px;
+    }
+    article {
+        padding: 0;
+        text-align: center;
+    }
+    .image {
+        width: 467px;
+        height: 410px;
+        animation: none;
+    }
+
+    .boxText {
+        width: 70%;
+    }
+
+    h1 {
+        width: 278px;
+        font-size: 30px;
+        margin: 0;
+    }
+
+    p {
+        width: 304px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .listNavBar {
+        display: none;
+    }
+
+    .buttonSign {
+        float: right;
+    }
+
+    article {
+        padding: 0 43px;
+    }
+
+    .boxText {
+        width: 100%;
+    }
+
+    .image {
+        width: 312px;
+        height: 288px;
+        animation: none;
+    }
 }
 
 @keyframes logoImage {
